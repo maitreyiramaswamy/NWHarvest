@@ -1,0 +1,16 @@
+{
+    "name": "HelloWorld",
+    "version": "0.0.0.1",
+    "manifest_version": 3,
+    "description": "Hello World extension",
+
+    "content_scripts":
+    [
+        {
+            "matches": ["*://*/*"],
+            "all_frames": true,
+            "js": ["hello_world_script.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
